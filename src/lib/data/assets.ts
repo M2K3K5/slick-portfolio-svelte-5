@@ -23,6 +23,7 @@ const Assets = {
 	Pandas: asset('pandas.svg'),
 	RabbitMQ: asset('rabbitmq.svg'),
 	Rust: asset('rust.svg', 'rust-dark.png'),
+	RustCrab: asset('rust-crab.png'),
 	Scrapy: asset('scrapy.png'),
 	Selenium: asset('selenium.svg'),
 	Docker: asset('docker.svg'),
@@ -36,8 +37,8 @@ const Assets = {
 	Kotlin: asset('kotlin.png'),
 	Python: asset('python.png'),
 	NodeJs: asset('node.png'),
-	Deno: asset('deno.svg'),
-	Svelte: asset('svelte.svg'),
+	Deno: asset('deno.png', 'deno-dark.png'),
+	Svelte: asset('svelte.png'),
 	ExpressJs: asset('express.png'),
 	JavaScript: asset('js.png'),
 	Fastify: asset('fastify.svg', 'fastify-dark.png'),
@@ -69,7 +70,10 @@ const Assets = {
 	Jest: asset('jest.png'),
 	Unocss: asset('unocss.svg'),
 	Ruvy: asset('ruvy.svg'),
-	Postcss: asset('postcss.svg')
+	Postcss: asset('postcss.svg'),
+	Php: asset('php.svg'),
+	SQL: asset('sql.svg'),
+	Default: asset('../favicon.ico'),
 };
 
 export default Assets;

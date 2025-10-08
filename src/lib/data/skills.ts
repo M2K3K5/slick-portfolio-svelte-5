@@ -78,30 +78,102 @@ export const groupByCategory = (
 
 const title = 'Skills';
 
-const items = [
+export const items = [
+	defineSkill({
+		slug: 'rs',
+		color: '#FF5733',
+		description:
+			'Rust is a systems programming language known for its focus on performance and memory safety. It is often used for developing high-performance applications, system-level software, and embedded systems. With its strong type system and ownership model, Rust helps prevent common programming errors.',
+		logo: Assets.RustCrab,
+		name: 'Rust',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'cs',
+		color: 'green',
+		description:
+			'C# (C Sharp) is a versatile and modern programming language developed by Microsoft. It is widely used for building Windows applications, web applications using ASP.NET, and game development with the Unity game engine. C# supports object-oriented programming and provides a rich set of libraries and features.',
+		logo: Assets.Csharp,
+		name: 'C#',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'py',
+		color: 'blue',
+		description:
+			'Python is a powerful and versatile programming language used for web development, data science, artificial intelligence, automation, and more. It is known for its simplicity and readability, making it an excellent choice for beginners and experienced developers alike.',
+		logo: Assets.Python,
+		name: 'Python',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'java',
+		color: 'red',
+		description:
+			'Java is a widely-used, platform-independent programming language known for its portability and reliability. It is commonly used for developing enterprise-level applications, mobile applications (Android), and large-scale distributed systems. The philosophy of Java "write once, run anywhere"  makes it a popular choice in various domains.',
+		logo: Assets.Java,
+		name: 'Java',
+		category: 'pro-lang'
+	}),
 	defineSkill({
 		slug: 'js',
 		color: 'yellow',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'JavaScript is the language of the web, used for building interactive and dynamic web applications. It runs in web browsers and allows developers to create engaging user interfaces. JavaScript is a crucial part of the modern web development stack, often used alongside HTML and CSS.',
 		logo: Assets.JavaScript,
-		name: 'Javascript',
+		name: 'JavaScript',
 		category: 'pro-lang'
 	}),
 	defineSkill({
-		slug: 'ts',
+		slug: 'svelte',
+		color: 'orange',
+		description:
+			'Svelte is a modern JavaScript framework that simplifies web development by shifting much of the work from the browser to the build step. It results in highly optimized and efficient web applications. Svelte\'s declarative syntax and reactive approach enhance developer productivity.',
+		logo: Assets.Svelte,
+		name: 'Svelte',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'vue',
+		color: 'green',
+		description:
+			'Vue.js is a progressive JavaScript framework for building user interfaces. It is known for its simplicity and ease of integration. Vue.js is often used to create interactive and reactive components, making it a popular choice for front-end development.',
+		logo: Assets.VueJs,
+		name: 'Vue.js',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'bootstrap',
+		color: 'purple',
+		description:
+			'Bootstrap is a front-end framework that simplifies the process of designing responsive and visually appealing websites. It provides a collection of pre-designed components and styles, allowing developers to create consistent and modern user interfaces quickly.',
+		logo: Assets.Bootstrap,
+		name: 'Bootstrap',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'sql',
 		color: 'blue',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.TypeScript,
-		name: 'Typescript',
-		category: 'pro-lang'
+			'SQL (Structured Query Language) is a standard language for managing and manipulating relational databases. It is used to perform tasks such as querying data, updating records, and managing database structures. SQL is essential for anyone working with databases.',
+		logo: Assets.SQL,
+		name: 'SQL',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'node',
+		color: 'green',
+		description:
+			'Node.js is a server-side JavaScript runtime that allows developers to build scalable and efficient network applications. It is commonly used to create server-side APIs and is a key component in the MEAN/MERN stack for full-stack JavaScript development.',
+		logo: Assets.NodeJs,
+		name: 'Node.js',
+		category: 'framework'
 	}),
 	defineSkill({
 		slug: 'css',
 		color: 'blue',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'CSS (Cascading Style Sheets) is a styling language used to control the presentation of HTML documents. It is essential for creating visually appealing and responsive web pages. CSS enables developers to define layouts, colors, and styles.',
 		logo: Assets.CSS,
 		name: 'CSS',
 		category: 'markup-style'
@@ -110,36 +182,46 @@ const items = [
 		slug: 'html',
 		color: 'orange',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'HTML (Hypertext Markup Language) is the standard markup language for creating web pages. It structures the content of a webpage, defining elements such as headings, paragraphs, and images. HTML is a fundamental skill for web developers.',
 		logo: Assets.HTML,
 		name: 'HTML',
 		category: 'markup-style'
 	}),
 	defineSkill({
-		slug: 'sass',
-		color: 'pink',
+		slug: 'vba',
+		color: 'green',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.Sass,
-		name: 'Sass',
-		category: 'markup-style'
+			'VBA (Visual Basic for Applications) is a programming language integrated into Microsoft Office applications. It is used to automate repetitive tasks, create custom solutions, and enhance functionality within Excel, Word, and other Office programs.',
+		logo: Assets.Default,
+		name: 'VBA',
+		category: 'pro-lang'
 	}),
 	defineSkill({
-		slug: 'reactjs',
-		color: 'cyan',
+		slug: 'php',
+		color: 'purple',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'PHP (Hypertext Preprocessor) is a server-side scripting language widely used for web development. It is especially suited for building dynamic and interactive websites. PHP is embedded in HTML and can connect to various databases for data processing.',
+		logo: Assets.Php,
+		name: 'PHP',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'react',
+		color: 'blue',
+		description:
+			'React is a popular JavaScript library for building user interfaces, particularly single-page applications (SPAs). It is widely used for creating dynamic and responsive web applications. React promotes a component-based architecture and makes it easy to manage the state of complex applications, making it a favorite choice for front-end development.',
 		logo: Assets.ReactJs,
-		name: 'React Js',
-		category: 'library'
+		name: 'React',
+		category: 'framework'
 	}),
 	defineSkill({
-		slug: 'svelte',
-		color: 'orange',
-		description: svelteMd,
-		logo: Assets.Svelte,
-		name: 'Svelte',
-		category: 'library'
+		slug: 'ts',
+		color: 'blue',
+		description:
+			'TypeScript is a statically typed superset of JavaScript that adds optional type checking and other features to enhance the development process. It is commonly used in large-scale JavaScript applications, providing better tooling and reducing errors during development. TypeScript is often used in combination with frameworks like React, Angular, and Node.js to improve code quality and maintainability.',
+		logo: Assets.TypeScript,
+		name: 'TypeScript',
+		category: 'pro-lang'
 	})
 ] as const;
 

@@ -3,32 +3,34 @@ import type { Education } from './types';
 
 const title = 'Education';
 
-const items: Array<Education> = [
+export const items: Array<Education> = [
 	{
-		degree: 'Bachelor degree of Computer Science',
+		degree: 'Student of applied computer science',
 		description: '',
-		location: 'Tunisia',
-		logo: Assets.Unknown,
+		location: 'Germany',
+		logo: Assets.Default,
 		name: '',
-		organization: 'ISTIC',
-		period: { from: new Date(2020, 0, 1), to: new Date(2022, 5, 1) },
+		organization: 'University',
+		period: { from: new Date("Aug 1, 2022"), to: new Date()},
 		shortDescription: '',
-		slug: 'dummy-education-item',
-		subjects: ['C', 'Algorithm', 'Algebra', 'Python', 'C++', 'Java', 'English']
+		slug: 'study',
+		subjects: ['Algorithm', 'Java']
 	},
 	{
-		degree: 'PhD of Computer Science',
+		degree: 'Software Developer',
 		description: '',
-		location: 'USA',
-		logo: Assets.Unknown,
+		location: 'Germany',
+		logo: Assets.Default,
 		name: '',
-		organization: 'MIT',
-		period: { from: new Date(2023, 0, 1) },
+		organization: 'Big e-commerce company',
+		period: { from: new Date("Aug 1, 2022"), to: new Date()},
 		shortDescription: '',
-		slug: 'dummy-education-item-2',
-		subjects: ['Assembly', 'Rust', 'Computer Architecture', 'Algorithms and Data structures']
+		slug: 'job',
+		subjects: ['IT-Security', 'Python', 'C#', 'SQL', 'Robotic Process Automation']
 	}
 ];
+
+items.sort((a, b) => b.period.to.getTime() - a.period.to.getTime());
 
 const EducationData = { title, items };
 
