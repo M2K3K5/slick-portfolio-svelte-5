@@ -1,10 +1,10 @@
 <script lang="ts">
 	import TitledPage from '$lib/components/common/titled-page/titled-page.svelte';
 	import ResponsiveContainer from '$lib/components/ui/responsive-container/responsive-container.svelte';
-	import H2 from '$lib/components/ui/typography/H2.svelte';
-	import H3 from '$lib/components/ui/typography/H3.svelte';
-	import H4 from '$lib/components/ui/typography/H4.svelte';
-	import P from '$lib/components/ui/typography/P.svelte';
+	import H2 from '$lib/components/ui/typography/h2.svelte';
+	import H3 from '$lib/components/ui/typography/h3.svelte';
+	import H4 from '$lib/components/ui/typography/h4.svelte';
+	import P from '$lib/components/ui/typography/p.svelte';
 
 	const linkClass = 'text-primary hover:underline focus:outline-none focus:ring-2 focus:ring-primary transition-colors';
 </script>
