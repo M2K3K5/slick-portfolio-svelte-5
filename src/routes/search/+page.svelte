@@ -146,7 +146,7 @@
 									</Avatar>
 									<Tooltip openDelay={300}>
 										<TooltipTrigger>
-											<CardTitle class="line-clamp-2 truncate text-ellipsis text-left"
+											<CardTitle class="line-clamp-2 truncate text-ellipsis text-left text-base text-muted-foreground"
 												>{item.name}</CardTitle
 											>
 										</TooltipTrigger>

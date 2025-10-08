@@ -37,7 +37,7 @@
 			class="flex flex-col items-center justify-center gap-4 text-center md:items-start md:text-left"
 		>
 			<H1>{HomeData.hero.title}</H1>
-			<Muted>{HomeData.hero.description}</Muted>
+			<Muted className="text-xl">{HomeData.hero.description}</Muted>
 			<div class="flex flex-row gap-1">
 				{#each HomeData.hero.links as item}
 					<a href={item.href} target="_blank">

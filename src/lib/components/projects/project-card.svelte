@@ -83,7 +83,7 @@
 		<Separator />
 	</CardHeader>
 	<CardContent class="flex flex-1 flex-col gap-4">
-		<Muted className="flex flex-row gap-2 items-center">
+		<Muted className="h-0 flex flex-row gap-2 items-center">
 			<Icon icon="i-carbon-assembly-cluster" />
 			<Muted>{project.type}</Muted>
 		</Muted>
@@ -91,8 +91,9 @@
 			<Icon icon="i-carbon-time" />
 			<Muted>{exactDuration}</Muted>
 		</Muted>
-		<Muted className="py-4 md:py-2 md:min-h-[100px] md:max-h-[100px]"
-			>{ellipsify(project.shortDescription, 100)}</Muted
+
+		<Muted className="py-4 md:py-2 md:min-h-[150px] md:max-h-[250px]"
+			>{ellipsify(project.shortDescription, 250)}</Muted
 		>
 		<div class="flex w-full flex-row items-center justify-between">
 			<Badge variant="outline">{from}</Badge>
